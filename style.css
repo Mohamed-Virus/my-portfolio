@@ -1,0 +1,1117 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style-type:none;
+    font-family: "Inter",sans-serif;
+}
+
+:root {
+    --main_color:#c9f31d;
+    --p_color:#8a8a8a;
+    --bg_color:#1f1f1f;
+    --white_color:#fff;
+    --black_color:#070707;
+    --border_color:rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background:#131313;
+    /* overflow-x:clip !important; */
+}
+
+
+/* background_span */
+
+.bg_span span {
+    position: fixed;
+    top:0;
+    z-index: -1;
+    height: 100%;
+    background: rgb(255, 255, 255, 0.05);
+    width: 1px;
+    animation: left_right 18s infinite;
+}
+
+.bg_span span:nth-child(1) {
+    left: 10%;
+}
+.bg_span span:nth-child(2) {
+    left: 20%;
+}
+.bg_span span:nth-child(3) {
+    left: 30%;
+}
+.bg_span span:nth-child(4) {
+    left: 40%;
+}
+.bg_span span:nth-child(5) {
+    left: 50%;
+}
+.bg_span span:nth-child(6) {
+    left: 60%;
+}
+.bg_span span:nth-child(7) {
+    left: 70%;
+}
+.bg_span span:nth-child(8) {
+    left: 80%;
+}
+.bg_span span:nth-child(9) {
+    left: 90%;
+}
+
+@keyframes left_right {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    50%{
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);   
+    }
+}
+
+/* stert header */
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 1000;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131313;
+    height: 100%;
+}
+
+
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header nav .logo img{
+    width: 40px;
+}
+
+header nav h1 {
+    font-weight: 500;
+    width: 30px;
+    text-transform:capitalize;
+    color:var(--white_color);
+}
+
+header .links {
+    display: flex;
+    gap: 25px;
+}
+
+header .links a {
+    color:var(--white_color);
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+header .links a:hover {
+    color:var(--main_color);
+    border-bottom:2px solid #c9f31d ;
+}
+
+header .icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .icons a {
+    color:var(--main_color);
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* stert home */
+
+.container .hero {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+
+.container .hero .div_text h4{
+    color: var(--white_color);
+    padding-bottom: 8px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.container .hero .div_text h2{
+    color: var(--main_color);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.container .hero .div_text p{
+    color: var(--p_color);
+    font-weight:500;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.container .hero .btns a {
+    padding-left:15px ;
+    margin-top: 10px;
+    display: inline-block;
+}
+.container .hero .btns .btn{
+    color: var(--black_color);
+    font-size: 20px;
+    background-color: var(--main_color);
+    padding:4px 10px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.container .hero .btns .btn:hover{
+    color: var(--black_color);
+    transform: scale(1.09);
+}
+
+.container .hero .div_img {
+    width: 35%;
+    position: relative;
+    border-radius: 0 0 600px 600px;
+    overflow: hidden;
+}
+
+
+.hero .div_img .img2{
+    z-index: -2;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    height: auto;
+
+}
+
+
+/* stert about */
+
+
+section{
+    padding: 50px 0;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    color: var(--white_color);
+    background-color: var(--black_color);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+
+.about .container .text h1{
+    color:var(--main_color);
+    padding-bottom: 10px;
+}
+
+.about .container .text h4{
+    padding-bottom: 15px;
+}
+
+.about .container .text p{
+    padding-bottom: 15px;
+    color: var(--p_color);
+    line-height: 1.2;
+}
+.about .container .text ul{
+    color: var(--main_color);
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.about .container .text ul li{
+    width: 45%;
+    gap: 10px;
+    display: flex;
+    font-weight:bolder;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.about .container .text a{
+    display: inline-block;
+
+    padding:10px 20px;
+    margin-top: 20px;
+    background-color:var(--main_color);
+    color: var(--black_color);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.about .container .text a:hover{
+    transform: scale(1.09);
+}
+
+.about .container img{
+    width: 250px;
+    height: 330px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0, 2);
+}
+
+/* End about */
+
+/* stert services */
+
+.services .boot{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services .boot h2{
+    font-size: 30px;
+    color: var(--white_color);
+}
+
+.services .boot h2 span{
+    color: var(--main_color);
+}
+
+.services .container {
+    height: 100vh;
+}
+
+.services .boxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.services .boxs .box{
+    width: 30%;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid var(--border_color);
+    border-radius: 10px;
+}
+
+.services .boxs .box:hover{
+    border-color: var(--main_color)
+}
+
+.services .boxs .box i{
+    font-size: 45px;
+    color: var(--main_color);
+    padding-bottom: 15px;
+}
+.services .boxs .box h3{
+    color: var(--white_color);
+    font-size: 19px;
+    padding-bottom: 18px;
+}
+.services .boxs .box p{
+    color: var(--p_color);
+}
+
+
+/* End services */
+
+
+/* stert projact */
+
+
+
+.projact .boot{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.projact .boot h2{
+    font-size: 30px;
+    color: var(--white_color);
+}
+
+.projact .boot h2 span{
+    color: var(--main_color);
+    text-transform: capitalize;
+}
+
+.projact .container{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.projact .projact-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.projact .projact-box img{
+    width: 45%;
+}
+
+.projact .projact-box .text{
+    width: calc(55% - 100px);
+    margin-left: 100px;
+}
+
+.projact .projact-box .text h4{
+    font-size:25px;
+    color:var(--main_color);
+    margin-bottom: 20px;
+    text-transform:capitalize;
+}
+
+
+.projact .projact-box .text h3 a{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--white_color);
+    transition: 0.5s;
+    text-transform:capitalize;
+}
+
+.projact .projact-box .text a:hover{
+    color:var(--main_color)
+}
+
+.projact .projact-box .text p{
+    color: var(--p_color);
+    font-size: 15px;
+    margin: 30px 0 50px;
+}
+
+.projact .projact-box.projact-box-2{
+    flex-direction: row-reverse;
+}
+
+
+/* End projact */
+
+
+/* stert contact */
+
+
+
+.contact .boot{
+    text-align: center;
+    padding:  50px 0;
+}
+
+.contact .boot h2{
+    font-size: 30px;
+    color: var(--white_color);
+}
+
+.contact .boot h2 span{
+    color: var(--main_color);
+}
+
+
+.contact .container{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.contact .sosial-contact h2{
+    color: var(--main_color);
+    margin: 0 auto 40px;
+    width: 80%;
+    font-size:30px;
+}
+
+
+.contact .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .links a{
+    color: var(--white_color);
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 0;
+    transform: 0.3s;
+}
+
+.contact .links a i{
+    color: var(--black_color);
+    background-color: var(--main_color);
+    border-radius: 5px;
+    width: 45px ;
+    height: 45px;
+    margin-right: 10px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.contact .links a:hover{
+    left:15px;
+}
+
+/* End contact */
+
+
+.contact form{
+    width: 60%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+.contact form .inputs-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 10px;
+}
+
+.contact form .inputs-form input{
+    width: calc(50% - 10px);
+}
+
+.contact form .inputs-form input,
+.contact form .inputs-form textarea
+{
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--white_color);
+    background-color: var(--bg_color);
+    margin-bottom: 30px;
+    border: 1px solid var(--border_color);
+    text-transform: capitalize;
+}
+
+.contact form .inputs-form textarea{
+    width: 100%;
+}
+
+.contact form .btn{
+    background-color: var(--main_color);
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+
+
+/* End contact */
+
+
+
+/* stert Responsive */
+
+.close_menu{
+    color: var(--main_color);
+    display: none;
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+header .links .logo {
+    display: none;
+}
+
+.icon_menu{
+    color: var(--main_color);
+    display: none;
+}
+
+
+@media (max-width:1250px) {
+    .container {
+        width: 90%;
+    }
+
+.services .container {
+    height: auto;
+}
+
+.about .container .text h1{
+    font-size: 35px;
+}
+
+.about .container .text h4{
+    font-size: 25px;
+}
+
+.about .container .text a{
+    font-size: 20px;
+}
+
+/* Responsive projact */
+
+.projact .projact-box .text{
+    margin-left: 80px;
+}
+
+.projact .projact-box .text p{
+    font-size: 20px;
+}
+
+
+
+}
+
+
+
+@media (max-width:1000px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        left: -400px;
+        background-color: var(--black_color);
+        flex-direction: column;
+        padding: 50px 0;
+        width: 400px;
+        height: 100%;
+        border-right:1px solid var(--border_color) ;
+        text-align: center;
+    }
+
+    header nav .links.active{
+        left: 0;
+    }
+
+    .close_menu{
+        display: block;
+    }
+
+    header .links .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    }
+
+    .icon_menu{
+        display: block;
+        font-size: 20px;
+    }
+
+
+
+/* Responsive home */
+
+
+.container .hero .div_text h2{
+    font-size: 50px;
+}
+
+.container .hero .div_text p {
+    font-weight: 600;
+}
+
+.container .hero .div_text h4 {
+    font-size: 40px;
+}
+
+.container .hero .btns .btn{
+    font-size: 25px;
+}
+
+.about .container .text h4{
+    font-size: 20px;
+}
+.about .container .text p{
+    font-size: 15px;
+}
+
+.projact .projact-box{
+    margin-bottom: 50px;
+}
+
+
+}
+
+
+
+/* Responsive 900 */
+
+
+@media (max-width:900px){
+
+    /* Responsive  About */
+
+    .about .container .text h4{
+        font-size: 20px;
+    }
+
+    .about .container .text p{
+        font-size: 15px;
+    }
+
+    .projact .boot h2{
+        padding: 60px 0;
+    }
+    
+    .container .hero{
+        height: auto;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+    }
+
+    .hero .div_text{
+        width: 100%;
+        text-align: center;
+        padding-top: 80px;
+
+    }
+
+    /* responsive About */
+
+    .about .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .container .text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about .container .text ul li{
+        width: 50%;
+    }
+
+    .about .container .text a{
+        font-size: 15px;
+    }
+
+    .services .boxs .box{
+        width: 47%;
+        margin-bottom: 20px
+    }
+
+    .services .container {
+        height: auto;
+    }
+
+    .projact .boot{
+        padding: 0;
+    }
+
+    .projact .projact-box,
+    .projact .projact-box .text h3 a,
+    .projact .projact-box .text p{
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .contact .links a i{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .contact .links a{
+        font-size:15px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Responsive 750 */
+
+
+@media (max-width:750px){
+
+    /* projact */
+
+    .projact .projact-box{
+        margin-bottom: 50px;
+    }
+
+    .projact .projact-box .text h3 a{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .projact .projact-box img{
+        width: 47%;
+    }
+
+        .projact .projact-box .text p{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .projact .projact-box .text{
+            margin-left: 65px;
+        }
+
+        /* contact */
+
+        .contact .container{
+            flex-direction: column;
+        }
+
+        .contact .links{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .contact .links a{
+            font-size: 17px;
+            width: 50%;
+        }
+
+        .contact form{
+            margin: 0 auto;
+            width: 80%;
+        }
+}
+
+
+
+/* Responsive 600 */
+
+
+
+@media (max-width:600px){
+
+.container .hero .div_text h2{
+    font-size: 40px;
+}
+
+.container .hero .div_text p {
+    font-weight: 500;
+}
+
+.container .hero .div_text h4 {
+    font-size: 30px;
+}
+
+.container .hero .btns .btn{
+    font-size: 20px;
+}
+
+.about .container .text h4{
+    font-size: 15px;
+}
+.about .container .text p{
+    font-size: 12px;
+}
+
+.container .hero .div_img {
+    width: 45%;
+}
+
+.about .container .text h1{
+    font-size:30px;
+}
+
+.about .container .text a{
+    font-size:13px;
+    padding: 10px;
+}
+
+
+.services .boot h2{
+    font-size:25px
+}
+
+/* projact */
+
+.projact .projact-box{
+    margin-bottom: 40px;
+}
+
+.projact .boot h2{
+    font-size: 25px;
+}
+
+.projact .projact-box{
+    flex-direction:column;
+}
+
+.projact .projact-box.projact-box-2{
+    flex-direction:column;
+}
+
+.projact .projact-box img{
+    width:65%
+}
+
+.projact .projact-box .text{
+    width: 80%;
+}
+.projact .projact-box .text h4{
+    font-size:28px;
+    margin:25px 0;
+}
+
+
+
+.contact .boot h2{
+    font-size:25px;
+}
+
+.contact .sosial-contact h2{
+    font-size:25px;
+}
+
+.contact .links a{
+    font-size:15px;
+}
+
+
+
+.contact .links a i {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+
+
+}
+
+
+
+
+/* Responsive 500 */
+
+
+
+@media (max-width:500px) {
+
+    .hero .div_text{
+        padding-top: 0;
+    }
+
+    header nav .icons{
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav .icons a{
+        font-size: 20px;
+    }
+
+    header nav .logo{
+        gap: 7px;
+    }
+    header nav .logo img{
+        width: 32px;
+    }
+    header nav h1{
+        width: 20px;
+    }
+
+    header nav .links{
+        width: 100%;
+        left: -100%;
+    }
+
+
+    /* home */
+
+.container .hero .div_text h2{
+    font-size: 35px;
+}
+
+.container .hero .div_text p {
+    font-weight: 400;
+    font-size:13px
+}
+
+.container .hero .div_text h4 {
+    font-size: 25px;
+}
+
+.container .hero .btns .btn{
+    font-size: 15px;
+}
+
+.container .hero .div_img {
+    width:50%;
+}
+
+
+/* abuot */
+
+
+
+.about .container .text p{
+    font-size: 10px;
+}
+
+.about .container .text h1{
+    font-size:25px
+}
+
+.about .container .text h4{
+    font-size: 13px;
+}
+
+.about .container .text ul li{
+    width: 100%;
+}
+
+
+
+.services .boot{
+    padding:0 0 50px;
+}
+
+.services .boxs {
+    flex-direction:column;
+}
+
+.services .boxs .box{
+    width: 80%;
+    margin-bottom:30px;
+}
+
+.projact .boot h2{
+    font-size:18px;
+}
+
+.projact .projact-box img{
+    width:90%;
+}
+
+.projact .boot h2{
+    padding:0 0 50px;
+}
+
+.projact .projact-box .text {
+        margin-right: 100px;
+    }
+
+
+.contact .links{
+    flex-direction:column;
+}
+
+.contact .links a{
+    width: 100%;
+}
+
+}
+
+
+
+
+/* Responsive 375 */
+
+
+
+@media (max-width:375px){
+
+    header nav .icons{
+        gap:5px
+    }
+
+    .container .hero .div_text h2{
+        font-size: 30px;
+    }
+
+    .container .hero .div_text p{
+        font-size: 11px;
+    }
+
+    .container .hero .btns .btn{
+        font-size: 12px;
+    }
+
+    .container .hero .div_img{
+        width: 60%;
+    }
+
+    /* about */
+
+    .about .container .text h1{
+        font-size: 22px;
+    }
+
+    .about .container .text h4{
+        font-size: 12px;
+    }
+
+    .about .container .text p{
+        font-size: 10px;
+    }
+
+    .about .container .text ul li{
+        font-size: 13px;
+    }
+
+    .about .container .text a{
+        padding: 8px;
+    }
+
+    .about .container img{
+        width: 200px;
+        height:280px;
+    }
+
+    /* services */
+
+    .services .boxs .box{
+        width: 80;
+    }
+
+    .services .boxs .box i{
+        font-size: 40px;
+    }
+
+}
