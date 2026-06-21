@@ -1114,4 +1114,43 @@ header .links .logo {
         font-size: 40px;
     }
 
+    .contact form .inputs-form{
+        flex-direction: column;
+        gap:0;
+    }
+
+    .contact form .inputs-form input{
+        width: 100%;
+    }
+
+    .contact form .inputs-form input, .contact form .inputs-form textarea{
+        padding: 15px;
+        margin-bottom:20px;
+    }
+
+    .contact form .btn{
+        padding: 7px 15px;
+    }
+
+}
+
+
+
+
+@media (max-width:330px) {
+    header nav  .icons{
+        gap:1px;
+    }
+
+    header nav .logo img{
+        width: 28px;
+    }
+
+    header nav h1{
+        width: 15px;;
+    }
+
+    .about .container .text p{
+        font-size:11px;
+    }
 }
